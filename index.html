@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/switch.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="headOptions">
+                <p>achille calculator</p>
+                <div class="toggleTheme">
+                    <p class="theme-text">THEME</p>
+                    <label class="switch">
+                        <span class="nums">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</span>
+                        <input type="checkbox" name="check" id="check">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="inputSpace">
+                <input type="text" placeholder="0" disabled name="numbers" id="number" maxlength="10" max="10">
+            </div>
+            <div class="buttons">
+                <div class="fourFourBtns">
+                    <div class="row">
+                        <div class="number button seven">
+                            7
+                        </div>
+                        <div class="number button eight">
+                            8
+                        </div>
+                        <div class="number button nine">
+                            9
+                        </div>
+                        <div class="delete button">
+                            DEL
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="number button four">
+                            4
+                        </div>
+                        <div class="number button five">
+                            5
+                        </div>
+                        <div class="number button six">
+                            6
+                        </div>
+                        <div class="action button plus">
+                            +
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="number button one">
+                            1
+                        </div>
+                        <div class="number button two">
+                            2
+                        </div>
+                        <div class="number button three">
+                            3
+                        </div>
+                        <div class="action button minus">
+                            -
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="number button dot">
+                            .
+                        </div>
+                        <div class="number button zero">
+                            0
+                        </div>
+                        <div class="number button divide">
+                            /
+                        </div>
+                        <div class="action button times">
+                            x
+                        </div>
+                    </div>
+                </div>
+                <div class="doubleBtns">
+                    <div class="reset button">
+                        RESET
+                    </div>
+                    <div class="equal button">
+                        =
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/calculator.js"></script>
+    <script src="./js/mode.js"></script>
+</body>
+</html>

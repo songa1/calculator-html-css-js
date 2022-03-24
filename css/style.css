@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+:root {
+    --background: hsl(222, 26%, 31%);
+    --keypad-bg: hsl(223, 31%, 20%);
+    --text-color: #fff;
+    --key-bg: hsl(30, 25%, 89%);
+    --key-shadow: hsl(28, 16%, 65%);
+    --screen-bg: hsl(224, 36%, 15%);
+    --red-key: hsl(6, 63%, 50%);
+    --blue-key: hsl(225, 21%, 49%);
+    --red-key-shadow: hsl(6, 70%, 34%);
+    --blue-key-shadow: hsl(224, 28%, 35%);
+    --text: hsl(221, 14%, 31%);
+    --light-bg: hsl(0, 0%, 90%);
+    --light-txt: hsl(60, 10%, 19%);
+    --light-screen: hsl(0, 0%, 93%);
+    --light-keys: hsl(0, 5%, 81%);
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    background-color: var(--background);
+}
+
+.light {
+    background-color: var(--light-bg);
+    color: var(--light-txt);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 100vh;
+}
+
+.calculator {
+    width: 400px;
+}
+
+.headOptions-light {
+    color: var(--light-txt);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headOptions {
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggleTheme {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.theme-text {
+    font-size: 10px;
+}
+
+.theme-text-light {
+    font-size: 10px;
+    color: var(--light-txt);
+}
+
+.inputSpace {
+    background-color: var(--screen-bg);
+    margin: 0px auto 15px auto;
+    border-radius: 10px;
+    position: relative;
+    height: 30px;
+    padding: 30px;
+}
+
+.inputSpace-light {
+    background-color: var(--light-screen);
+    margin: 0px auto 15px auto;
+    border-radius: 10px;
+    position: relative;
+    height: 30px;
+    padding: 30px;
+}
+
+.inputSpace input {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: transparent;
+    color: var(--text-color);
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: end;
+    padding: 20px;
+}
+
+.buttons {
+    background-color: var(--keypad-bg);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.buttons-light {
+    background-color: var(--light-keys);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fourFourBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.row div {
+    flex: 1;
+}
+
+.button {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.number, .action {
+    background-color: var(--key-bg);
+    box-shadow: 1px 0px 5px 2px var(--key-shadow);
+    color: var(--text);
+}
+
+.number:active, .action:active {
+    border-bottom: 0px solid var(--key-bg);
+    box-shadow: 0px 0px 5px 0px var(--key-shadow);
+}
+
+.delete {
+    background-color: var(--blue-key);
+    box-shadow: 1px 1px 5px 2px var(--blue-key-shadow);
+    color: var(--text-color);
+}
+
+.delete:active {
+    background-color: var(--blue-key);
+    box-shadow: 0px 0px 5px 0px var(--blue-key-shadow);
+}
+
+.doubleBtns {
+    display: flex;
+    gap: 10px;
+    color: var(--text-color);
+}
+
+.doubleBtns div {
+    flex: 1;
+}
+
+.reset {
+    background-color: var(--blue-key);
+    box-shadow: 1px 1px 5px 1px var(--blue-key-shadow);
+}
+
+.equal {
+    background-color: var(--red-key);
+    border-bottom: 2px solid var(--red-key-shadow);
+    box-shadow: 1px 1px 5px 1px var(--red-key-shadow);
+}
